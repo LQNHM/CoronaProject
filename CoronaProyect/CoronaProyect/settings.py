@@ -26,7 +26,7 @@ SECRET_KEY = 'vgdf=cv0l)cis*r)t2(+@d&cmrqx&o)@n=q*8ga+p7$=)a+js)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://arcane-fjord-75175.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition

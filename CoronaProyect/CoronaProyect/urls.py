@@ -20,5 +20,9 @@ from CoronaProyect import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.inicio),
+    path('AutoTest/', views.AutoTest),
+    path('Arreglando/', views.Arreglando),
+    path('Registrarse/', views.Registro),
+    path('Cuidados/', views.Cuidados),
 
 ]
