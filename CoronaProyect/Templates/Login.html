@@ -13,20 +13,18 @@
       <h1 class="text-center">INICIAR SESION</h1>
     </div>
     <hr class="mx-3">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
     
-    <form>
+    <form method="POST">
+      {{ form.as_p }}
+      {% csrf_token %}
       <div class="form-group">
         <div class="form-group mx-auto col-md-6">
-          <input type="nombre" class="form-control" id="inputapellido" placeholder="Correo Electronico">
+          <input type="nombre" class="form-control" id="inputapellido" placeholder="Correo Electronico" name="email">
         </div>
       </div>
       <div class="form-group mx-auto col-md-6">
-        <input type="text" class="form-control" id="inputPassword" placeholder="Contraseña">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Contraseña" name="contrasena">
       </div>
       <div class="form-group text-center">
         <div class="text-center my-3">

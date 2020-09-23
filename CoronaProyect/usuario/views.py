@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from usuario.models import Usuario
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -11,4 +12,3 @@ def Registro(request):
 		nuevo_user.save()
 	return render(request, "Registrarse.html")
 
-	

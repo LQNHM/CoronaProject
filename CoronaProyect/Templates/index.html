@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
   	{% block content %}
@@ -20,11 +20,11 @@
 		      			<span class="sr-only">Toggle Dropdown</span>
 		    		</button>
 		    	<div class="dropdown-menu">
-			    	<a class="dropdown-item" href="#">Todos</a>
+			    	<a class="dropdown-item" href="/">Todos</a>
 			    	<div class="dropdown-divider"></div>
-			      	<a class="dropdown-item" href="#">Niños</a>
-			      	<a class="dropdown-item" href="#">Adolescentes</a>
-			      	<a class="dropdown-item" href="#">Ancianos</a>
+			      	<a class="dropdown-item" href="/Arreglando">Niños</a>
+			      	<a class="dropdown-item" href="/Adolescente">Adolescentes</a>
+			      	<a class="dropdown-item" href="/Arreglando">Ancianos</a>
 		    	</div>
 	 			</div>
 		</div>
@@ -40,7 +40,7 @@
     	<div class="card-columns">
 
     		<div class="card my-auto mx-auto">
-    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    			<a href="/Arreglando">
     				<img src="/static/images/baile.jpg" alt="" class="card-img-top">	
     			</a>
 			    <div class="card-body">
@@ -49,7 +49,7 @@
     		</div>
 
 			<div class="card my-auto mx-auto">
-    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    			<a href="/Arreglando" >
     				<img src="/static/images/true.png" alt="" class="card-img-top">	
     			</a>
 			    <div class="card-body">
@@ -58,7 +58,7 @@
     		</div>
 
 			<div class="card my-auto mx-auto">
-    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    			<a href="/Adolescente/musica">
     				<img src="/static/images/asot.jpg" alt="" class="card-img-top">	
     			</a>
 			    <div class="card-body">
@@ -75,7 +75,7 @@
     	<div class="card-columns">
 
     		<div class="card my-auto mx-auto">
-    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    			<a href="/Adolescente/gym">
     				<img src="/static/images/flexiones.jpg" alt="" class="card-img-top">	
     			</a>
 			    <div class="card-body">
@@ -84,7 +84,7 @@
     		</div>
     		
 			<div class="card my-auto mx-auto">
-    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    			<a href="/Adolescente/juegos">
     				<img src="/static/images/zelda.jpg" alt="" class="card-img-top">	
     			</a>
 			    <div class="card-body">
@@ -93,7 +93,7 @@
     		</div>
     		
 			<div class="card my-auto mx-auto">
-    			<a href="" data-toggle="modal" data-target="#exampleModal">
+    			<a href="/Arreglando">
     				<img src="/static/images/pelis.png" alt="" class="card-img-top">	
     			</a>
 			    <div class="card-body">

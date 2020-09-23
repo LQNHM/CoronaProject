@@ -26,6 +26,9 @@ urlpatterns = [
     path('Cuidados/', views.Cuidados),
     path('Login/', views.Login),
     path('Adolescente', views.Adolescente),
-    path('usuario/', include('usuario.urls'))
-
+    path('usuario/', include('usuario.urls')),
+    path('home/', views.Home),
+    path('Adolescente/juegos', views.jogos),
+    path('Adolescente/gym', views.gym),
+    path('Adolescente/musica', views.music),
 ]

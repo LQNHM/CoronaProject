@@ -3,4 +3,5 @@ from usuario import views
 
 urlpatterns = [
 	path('Registrarse/', views.Registro),
+	
 ]
