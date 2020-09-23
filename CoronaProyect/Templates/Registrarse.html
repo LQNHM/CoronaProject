@@ -15,37 +15,32 @@
     </div>
 
     
-    <form>
-      <div class="form-group">
+    <form method="POST">
+      {% csrf_token %}
         <div class="form-group mx-auto col-md-6">
-          <label for="nombre">Nombre *</label>
-          <input type="nombre" class="form-control" id="inputapellido" placeholder="Kimi">
+          <input type="id" class="form-control" id="inputid" placeholder="usuario_ID*"" name="usuario_id">
         </div>
         <div class="form-group mx-auto col-md-6">
-          <label for="apellido">Apellido *</label>
-          <input type="apellido" class="form-control" id="inputapellido" placeholder="Raikkonen">
+          <input type="nombre" class="form-control" id="inputnombre" placeholder="Nombre*"" name="nombre">
         </div>
+        <div class="form-group mx-auto col-md-6">
+          <input type="apellido" class="form-control" id="inputapellido" placeholder="Apellido*" name="apellido">
+        </div>
+      <div class="form-group mx-auto col-md-6">
+        <input type="text" class="form-control" id="inputNacimiento" placeholder="Fecha de Nacimiento*" name="nacimiento">
       </div>
       <div class="form-group mx-auto col-md-6">
-        <label for="inputNacimiento">Fecha de Nacimiento *</label>
-        <input type="text" class="form-control" id="inputNacimiento" placeholder="DD/MM/AAAA">
+        <input type="text" class="form-control" id="inputCorreo" placeholder="Correo Electronico*" name="email">
       </div>
       <div class="form-group mx-auto col-md-6">
-        <label for="inputCorreo">Correo *</label>
-        <input type="text" class="form-control" id="inputCorreo" placeholder="algo@correo.com">
+        <input type="text" class="form-control" id="inputPassword" placeholder="Contraseña*" name="contrasena">
       </div>
       <div class="form-group mx-auto col-md-6">
-        <label for="inputPassword">Password *</label>
-        <input type="text" class="form-control" id="inputPassword" placeholder="*******">
+        <input type="text" class="form-control" id="inputPassword2" placeholder="Confirmar Contraseña*">
       </div>
-      <div class="form-group mx-auto col-md-6">
-        <label for="inputPassword2">Confirmar Password *</label>
-        <input type="text" class="form-control" id="inputPassword2" placeholder="********">
-      </div>
-      <div class="form-group">
         <div class="form-group mx-auto col-md-4">
-        <label for="inputProvincia">Provincia</label>
-        <select id="inputProvincia" class="form-control">
+        <label for="inputProvincia">Provincia*</label>
+        <select id="inputProvincia" class="form-control" name="provincia">
           <option selected>Elegir...</option>
           <option>Buenos Aires</option>
           <option>Catamarca</option>
@@ -73,23 +68,17 @@
         </select>
       </div>
       <div class="form-group mx-auto col-md-4">
-        <label for="inputCiudad">Ciudad</label>
-        <input type="text" class="form-control" id="inputCiudad" placeholder="Resistencia">
+        <label for="inputCiudad">Ciudad*</label>
+        <input type="text" class="form-control" id="inputCiudad" placeholder="Resistencia" name="ciudad">
       </div>
       <div class="form-group mx-auto col-md-2">
-          <label for="inputCP">Codigo Postal</label>
-          <input type="text" class="form-control" id="inputCP">
-      </div>
+          <label for="inputCP">Codigo Postal*</label>
+          <input type="text" class="form-control" id="inputCP" name="codigopostal">
       </div>
       <div class="form-group text-center">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Haciendo clic aqui algo va a pasar, todavia no se que...
-            </label>
-        </div>
+
         <div class="my-3">
-          <span>Los campos con * son obligatorios.</span>
+          <span>Los campos con (*) son obligatorios.</span>
         </div>
         <div class="text-center my-3">
           <span class="">Al hacer clic en registrarse, acepto que he leido y acepto los Terminos y condiciones y la Politica de privacidad.</span>
