@@ -26,6 +26,6 @@ urlpatterns = [
     path('Cuidados/', views.Cuidados),
     path('Login/', views.Login),
     path('Adolescente', views.Adolescente),
-    path('Usuario', include('usuario.urls')),
+    path('usuario/', include('usuario.urls'))
 
 ]
